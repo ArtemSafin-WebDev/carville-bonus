@@ -1,0 +1,214 @@
+.intro {
+  padding-top: 15.5rem;
+  display: grid;
+  grid-template-columns:
+    [main-start] 1fr [content-start] minmax(0, var(--container-width, 0))
+    [content-end] 1fr [main-end];
+  grid-gap: var(--content-padding, 0);
+  position: relative;
+  z-index: 10;
+
+  @media (--desktop) {
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 13.6rem;
+      height: 18.4rem;
+      background-image: url("../images/intro-decor-right.webp");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::after {
+      content: "";
+      left: 1rem;
+      top: 1rem;
+      width: 10.5rem;
+      height: 15.7rem;
+      background-image: url("../images/intro-decor-left.webp");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+    }
+  }
+
+  @media (--mobile) {
+    padding-top: 2.4rem;
+    margin-bottom: 4rem;
+
+    &::after {
+      content: "";
+      right: 1.6rem;
+      top: 0;
+      width: 10rem;
+      height: 10rem;
+      background-image: url("../images/intro-mobile-decor-right.webp");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+    }
+  }
+}
+
+.intro__content {
+  grid-column-start: content-start;
+  grid-column-end: content-end;
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+
+  @media (--mobile) {
+    gap: 2.4rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.intro__image-wrapper {
+  width: 86rem;
+  height: auto;
+  margin-right: -6.4rem;
+
+  @media (--mobile) {
+    width: auto;
+    margin: 0;
+    order: -10;
+  }
+}
+
+.intro__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.intro__text-content {
+  width: 20%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  @media (--mobile) {
+    width: 100%;
+    flex-grow: 0;
+  }
+}
+
+.intro__heading-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  margin-bottom: 1.6rem;
+
+  @media (--mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.intro__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 8.1rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+
+  @media (--mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+}
+
+.intro__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  margin-bottom: 3.2rem;
+
+  @media (--mobile) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.intro__btns {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+
+  @media (--mobile) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+  }
+}
+
+.intro__login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  padding: 2.4rem 4.8rem;
+  background: radial-gradient(50% 386.77% at 50% 50%, #fab461 0%, #f76b1c 100%);
+  border-radius: 1.2rem;
+  color: white;
+
+  @media (--mobile) {
+    width: 100%;
+    align-self: stretch;
+    line-height: 1.2;
+    padding: 2rem 4rem;
+    font-size: 2.2rem;
+  }
+
+  &:link,
+  &:visited {
+    color: white;
+  }
+}
+
+.intro__register-btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: all 0.2s;
+  &:link,
+  &:visited {
+    color: var(--primary-color);
+  }
+  @media (hover: hover) {
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
+  @media (--mobile) {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+}

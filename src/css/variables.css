@@ -1,0 +1,11 @@
+:root {
+  --container-width: 152rem;
+  --content-padding: 4rem;
+  --primary-color: #ff6e00;
+  --text-color: #000000;
+  --tt-carville: "TT Carville", sans-serif;
+
+  @media (--mobile) {
+    --content-padding: 1rem;
+  }
+}

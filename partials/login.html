@@ -1,0 +1,76 @@
+<section class="auth">
+    <div class="auth__bg">
+        <img src="/images/auth-illustration.svg" alt="" class="auth__bg-image">
+    </div>
+    <div class="auth__content">
+        <div class="auth__inner-wrapper">
+            <a href="/" class="auth__back-link">
+                <svg width="14" height="14" aria-hidden="true">
+                    <use xlink:href="#back-arrow"></use>
+                </svg>
+                Назад
+            </a>
+            <form action="/" method="POST" class="auth__form js-form">
+                <div class="auth__card">
+                    <div class="auth__form-mobile-wrapper">
+
+
+                        <div class="auth__card-links">
+                            <a href="#" class="auth__card-link active">
+                                Вход
+                            </a>
+                            <a href="#" class="auth__card-link">
+                                Регистрация
+                            </a>
+                        </div>
+                        <div class="auth__form-mobile-wrapper-inner">
+
+
+                            <div class="auth__form-fields">
+                                <div class="auth__form-field">
+                                    <label class="auth__form-label">
+                                        <input type="text" class="auth__form-input" name="login"
+                                            placeholder="ИНН/Телефон/Email" required="">
+                                        <span class="auth__form-label-text">
+                                            ИНН/Телефон/Email
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="auth__form-field">
+                                    <label class="auth__form-label">
+
+                                        <input type="password" class="auth__form-input" name="password"
+                                            placeholder="Пароль" required="">
+                                        <button class="auth__form-show-password-btn js-show-password" type="button">
+                                            <div class="auth__form-show-password-btn-icon">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#eye"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="auth__form-show-password-btn-icon">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#eye-closed"></use>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <span class="auth__form-label-text">
+                                            Пароль
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <a href="#" class="auth__form-remember-link">
+                                Забыли пароль?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="auth__form-submit-wrapper">
+                        <button class="auth__form-submit" type="submit">
+                            Войти
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

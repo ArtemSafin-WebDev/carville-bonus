@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-family: var(--tt-carville);
+  background-color: white;
+  color: var(--text-color);
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+body.menu-open {
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-x: hidden;
+}

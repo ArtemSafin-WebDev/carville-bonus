@@ -1,0 +1,135 @@
+.rules {
+  display: grid;
+  grid-template-columns:
+    [main-start] 1fr [content-start] minmax(0, var(--container-width, 0))
+    [content-end] 1fr [main-end];
+  grid-gap: var(--content-padding, 0);
+  margin-bottom: 10rem;
+  margin-top: -10rem;
+
+  @media (--mobile) {
+    margin-bottom: 5rem;
+    margin-top: 0;
+  }
+}
+
+.rules__content {
+  grid-column-start: content-start;
+  grid-column-end: content-end;
+}
+
+.rules__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  margin-bottom: 3rem;
+
+  @media (--mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.rules__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 6rem;
+  counter-reset: ordered-list;
+
+  @media (--mobile) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 2.4rem;
+  }
+}
+
+.rules__list-item {
+  display: flex;
+  flex-direction: column;
+  counter-increment: ordered-list;
+}
+
+.rules__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.rules__card-image-container {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  @media (--desktop) {
+    margin-bottom: -12rem;
+  }
+
+  @media (--mobile) {
+    margin: 0 calc(-1 * var(--content-padding));
+    margin-bottom: -12rem;
+  }
+}
+
+.rules__card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.rules__card-step-number {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9.6rem;
+  line-height: 12.1rem;
+  color: var(--primary-color);
+
+  &::before {
+    content: counter(ordered-list);
+  }
+
+  @media (--mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 8.1rem;
+    margin-bottom: 2rem;
+  }
+}
+.rules__card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1.6rem;
+
+  @media (--mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.rules__card-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+
+  @media (--mobile) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+}
