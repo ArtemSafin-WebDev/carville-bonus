@@ -8,3 +8,9 @@
   padding: 0 1.6rem;
   margin-top: 0.4rem;
 }
+
+.only-desktop {
+  @media (--mobile) {
+    display: none;
+  }
+}
