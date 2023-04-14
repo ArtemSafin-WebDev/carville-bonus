@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>
+        Регистрация
+    </title>    <script type="module" crossorigin src="/assets/main.js"></script>
+    <link rel="stylesheet" href="/assets/main.css">
+  </head>
+
+  <body>
+    <header class="header-dashboard">
+        <div class="header-dashboard__content">
+            <a href="/" class="header-dashboard__logo">
+                <img src="/images/logo.svg" alt="" class="header-dashboard__logo-image">
+            </a>
+            <a href="#" class="header-dashboard__back">
+                <svg width="14" height="14" aria-hidden="true">
+                    <use xlink:href="#back-arrow"></use>
+                </svg>
+            </a>
+        </div>
+    </header>    <main class="page-main">
+      <section class="auth">
+          <div class="auth__bg">
+              <img src="/images/auth-illustration.svg" alt="" class="auth__bg-image">
+          </div>
+          <div class="auth__content">
+              <div class="auth__inner-wrapper">
+                  <a href="/" class="auth__back-link">
+                      <svg width="14" height="14" aria-hidden="true">
+                          <use xlink:href="#back-arrow"></use>
+                      </svg>
+                      Назад
+                  </a>
+                  <form action="/" method="POST" class="auth__form js-multistep-form">
+                      <div class="auth__card">
+                          <div class="auth__form-mobile-wrapper">
+      
+      
+                              <div class="auth__card-links">
+                                  <a href="#" class="auth__card-link">
+                                      Вход
+                                  </a>
+                                  <a href="#" class="auth__card-link active">
+                                      Регистрация
+                                  </a>
+                              </div>
+                              <div class="auth__form-mobile-wrapper-inner">
+                                  <div class="auth__form-pagination">
+                                      <span class="auth__form-pagination-bullet">
+      
+                                      </span>
+                                      <span class="auth__form-pagination-bullet">
+      
+                                      </span>
+                                      <span class="auth__form-pagination-bullet">
+      
+                                      </span>
+                                  </div>
+                                  <div class="auth__form-tabs">
+                                      <div class="auth__form-tab">
+                                          <div class="auth__form-fields">
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="text" inputmode="numeric" class="auth__form-input"
+                                                          name="inn" placeholder="ИНН" required="" pattern="[0-9]+">
+                                                      <span class="auth__form-questionmark">
+                                                          <span class="auth__form-questionmark-tooltip">
+                                                              <span class="auth__form-questionmark-tooltip-content">
+                                                                  Тултип
+                                                              </span>
+      
+                                                          </span>
+                                                      </span>
+                                                      <span class="auth__form-label-text">
+                                                          ИНН
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="text" class="auth__form-input" name="company-name"
+                                                          placeholder="Юридическое наименование" required="">
+                                                      <span class="auth__form-questionmark">
+                                                          <span class="auth__form-questionmark-tooltip">
+                                                              <span class="auth__form-questionmark-tooltip-content">
+                                                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                                  Provident consectetur repudiandae dignissimos accusamus quis
+                                                                  omnis quod temporibus nihil similique sint.
+                                                              </span>
+      
+                                                          </span>
+                                                      </span>
+                                                      <span class="auth__form-label-text">
+                                                          Юридическое наименование
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="text" class="auth__form-input" name="company-real-name"
+                                                          placeholder="Фактическое наименование" required="">
+                                                      <span class="auth__form-questionmark">
+                                                          <span class="auth__form-questionmark-tooltip">
+                                                              <span class="auth__form-questionmark-tooltip-content">
+                                                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                                  Provident consectetur repudiandae dignissimos accusamus quis
+                                                                  omnis quod temporibus nihil similique sint.
+                                                              </span>
+      
+                                                          </span>
+                                                      </span>
+                                                      <span class="auth__form-label-text">
+                                                          Фактическое наименование
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="text" class="auth__form-input" name="address"
+                                                          placeholder="Юридический адрес" required="">
+                                                      <span class="auth__form-questionmark">
+                                                          <span class="auth__form-questionmark-tooltip">
+                                                              <span class="auth__form-questionmark-tooltip-content">
+                                                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                                  Provident consectetur repudiandae dignissimos accusamus quis
+                                                                  omnis quod temporibus nihil similique sint.
+                                                              </span>
+      
+                                                          </span>
+                                                      </span>
+                                                      <span class="auth__form-label-text">
+                                                          Юридический адрес
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="text" class="auth__form-input" name="real-address"
+                                                          placeholder="Фактический адрес" required="">
+                                                      <span class="auth__form-questionmark">
+                                                          <span class="auth__form-questionmark-tooltip">
+                                                              <span class="auth__form-questionmark-tooltip-content">
+                                                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                                  Provident consectetur repudiandae dignissimos accusamus quis
+                                                                  omnis quod temporibus nihil similique sint.
+                                                              </span>
+      
+                                                          </span>
+                                                      </span>
+                                                      <span class="auth__form-label-text">
+                                                          Фактический адрес
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <div class="auth__form-select js-select">
+                                                      <button class="auth__form-select-btn" type="button">
+                                                          <span class="auth__form-select-btn-text">
+                                                              Тип деятельности
+                                                          </span>
+                                                          <svg width="14" height="14" aria-hidden="true">
+                                                              <use xlink:href="#arrow-down"></use>
+                                                          </svg>
+                                                      </button>
+                                                      <span class="auth__form-questionmark">
+                                                          <span class="auth__form-questionmark-tooltip">
+                                                              <span class="auth__form-questionmark-tooltip-content">
+                                                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                                  Provident consectetur repudiandae dignissimos accusamus quis
+                                                                  omnis quod temporibus nihil similique sint.
+                                                              </span>
+      
+                                                          </span>
+                                                      </span>
+                                                      <div class="auth__form-select-dropdown">
+                                                          <div class="auth__form-select-dropdown-inner">
+                                                              <ul class="auth__form-select-list">
+                                                                  <li class="auth__form-select-list-item">
+                                                                      <label class="auth__form-select-choice">
+                                                                          <input type="radio" name="type"
+                                                                              class="auth__form-select-choice-input" value="">
+                                                                          <span class="auth__form-select-choice-text">
+                                                                              Тип деятельности
+                                                                          </span>
+                                                                      </label>
+                                                                  </li>
+                                                                  <li class="auth__form-select-list-item">
+                                                                      <label class="auth__form-select-choice">
+                                                                          <input type="radio" name="type"
+                                                                              class="auth__form-select-choice-input"
+                                                                              value="1">
+                                                                          <span class="auth__form-select-choice-text">
+                                                                              Тип 1
+                                                                          </span>
+                                                                      </label>
+                                                                  </li>
+                                                                  <li class="auth__form-select-list-item">
+                                                                      <label class="auth__form-select-choice">
+                                                                          <input type="radio" name="type"
+                                                                              class="auth__form-select-choice-input"
+                                                                              value="2">
+                                                                          <span class="auth__form-select-choice-text">
+                                                                              Тип 2
+                                                                          </span>
+                                                                      </label>
+                                                                  </li>
+                                                              </ul>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <div class="auth__form-select js-select">
+                                                      <button class="auth__form-select-btn" type="button">
+                                                          <span class="auth__form-select-btn-text">
+                                                              Дистрибьютор
+                                                          </span>
+                                                          <svg width="14" height="14" aria-hidden="true">
+                                                              <use xlink:href="#arrow-down"></use>
+                                                          </svg>
+                                                      </button>
+                                                      <span class="auth__form-questionmark">
+                                                          <span class="auth__form-questionmark-tooltip">
+                                                              <span class="auth__form-questionmark-tooltip-content">
+                                                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                                  Provident consectetur repudiandae dignissimos accusamus quis
+                                                                  omnis quod temporibus nihil similique sint.
+                                                              </span>
+      
+                                                          </span>
+                                                      </span>
+                                                      <div class="auth__form-select-dropdown">
+                                                          <div class="auth__form-select-dropdown-inner">
+                                                              <ul class="auth__form-select-list">
+                                                                  <li class="auth__form-select-list-item">
+                                                                      <label class="auth__form-select-choice">
+                                                                          <input type="radio" name="distributor"
+                                                                              class="auth__form-select-choice-input" value="">
+                                                                          <span class="auth__form-select-choice-text">
+                                                                              Дистрибьютор
+                                                                          </span>
+                                                                      </label>
+                                                                  </li>
+                                                                  <li class="auth__form-select-list-item">
+                                                                      <label class="auth__form-select-choice">
+                                                                          <input type="radio" name="distributor"
+                                                                              class="auth__form-select-choice-input"
+                                                                              value="1">
+                                                                          <span class="auth__form-select-choice-text">
+                                                                              Дистрибьютор 1
+                                                                          </span>
+                                                                      </label>
+                                                                  </li>
+                                                                  <li class="auth__form-select-list-item">
+                                                                      <label class="auth__form-select-choice">
+                                                                          <input type="radio" name="distributor"
+                                                                              class="auth__form-select-choice-input"
+                                                                              value="2">
+                                                                          <span class="auth__form-select-choice-text">
+                                                                              Дистрибьютор 2
+                                                                          </span>
+                                                                      </label>
+                                                                  </li>
+      
+                                                              </ul>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+      
+                                          </div>
+                                      </div>
+                                      <div class="auth__form-tab">
+                                          <div class="auth__form-fields">
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="text" class="auth__form-input" name="last-name"
+                                                          placeholder="Фамилия" required="">
+                                                      <span class="auth__form-questionmark">
+      
+                                                      </span>
+                                                      <span class="auth__form-label-text">
+                                                          Фамилия
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="text" class="auth__form-input" name="first-name"
+                                                          placeholder="Имя" required="">
+                                                      <span class="auth__form-questionmark">
+      
+                                                      </span>
+                                                      <span class="auth__form-label-text">
+                                                          Имя
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="text" class="auth__form-input" name="surname"
+                                                          placeholder="Отчество">
+      
+                                                      <span class="auth__form-label-text">
+                                                          Отчество
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="text" class="auth__form-input" name="role"
+                                                          placeholder="Должность">
+      
+                                                      <span class="auth__form-label-text">
+                                                          Должность
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="tel" class="auth__form-input auth__form-input--phone"
+                                                          name="phone" placeholder="Телефон" required="">
+      
+                                                      <span class="auth__form-label-text">
+                                                          Телефон
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="email" class="auth__form-input auth__form-input--email"
+                                                          name="email" placeholder="Email" required="">
+      
+                                                      <span class="auth__form-label-text">
+                                                          Email
+                                                      </span>
+                                                  </label>
+                                              </div>
+      
+                                          </div>
+                                          <div class="auth__form-policy">
+                                              <label class="auth__form-policy-checkbox">
+                                                  <input type="checkbox" class="auth__form-policy-checkbox-input"
+                                                      name="policy" required="" value="1">
+                                                  <span class="auth__form-policy-checkbox-mark">
+                                                      <svg width="14" height="14" aria-hidden="true">
+                                                          <use xlink:href="#checkmark"></use>
+                                                      </svg>
+                                                  </span>
+                                                  <span class="auth__form-policy-checkbox-text">
+                                                      Согласен с <a href="#">политикой конфиденциальности</a>
+                                                  </span>
+                                              </label>
+                                          </div>
+                                      </div>
+                                      <div class="auth__form-tab">
+                                          <div class="auth__form-fields">
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="password"
+                                                          class="auth__form-input auth__form-input--password" name="password"
+                                                          placeholder="Ваш пароль" required="" id="your-password">
+      
+                                                      <span class="auth__form-label-text">
+                                                          Ваш пароль
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                              <div class="auth__form-field">
+                                                  <label class="auth__form-label">
+                                                      <input type="password"
+                                                          class="auth__form-input auth__form-input--password"
+                                                          name="password-confirmation" placeholder="Повторите пароль"
+                                                          required="" data-equals-to="#your-password">
+                                                      <span class="auth__form-label-text">
+                                                          Повторите пароль
+                                                      </span>
+                                                  </label>
+                                              </div>
+      
+      
+                                          </div>
+      
+                                      </div>
+                                  </div>
+      
+                              </div>
+                          </div>
+                          <div class="auth__form-btn-layers">
+                              <div class="auth__form-btn-layer active">
+                                  <div class="auth__form-submit-wrapper">
+                                      <button class="auth__form-submit js-next-btn" type="button">
+                                          Далее
+                                      </button>
+                                  </div>
+                              </div>
+                              <div class="auth__form-btn-layer">
+                                  <div class="auth__form-submit-wrapper">
+                                      <button class="auth__form-back js-prev-btn" type="button">
+                                          <svg width="14" height="14" aria-hidden="true">
+                                              <use xlink:href="#arrow-left"></use>
+                                          </svg>
+                                          Назад
+                                      </button>
+                                      <button class="auth__form-submit js-next-btn" type="button">
+                                          Далее
+                                      </button>
+                                  </div>
+                              </div>
+                              <div class="auth__form-btn-layer">
+                                  <div class="auth__form-submit-wrapper">
+                                      <button class="auth__form-back js-prev-btn" type="button">
+                                          <svg width="14" height="14" aria-hidden="true">
+                                              <use xlink:href="#arrow-left"></use>
+                                          </svg>
+                                          Назад
+                                      </button>
+                                      <button class="auth__form-submit" type="submit">
+                                          Завершить
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+      
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </section>    </main>
+    <footer class="page-footer  page-footer--only-desktop ">
+        <div class="page-footer__content">
+            <div class="page-footer__top-row">
+                <ul class="page-footer__list">
+                    <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__link">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                            Пользовательское соглашение
+                        </a>
+                    </li>
+                    <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__link">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                    <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__link">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                            Техподдержка
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="page-footer__logo">
+    
+    
+                    <picture>
+                        <source srcset="/images/logo-grey-mobile.svg" media="(max-width: 640px)" />
+                        <img src="/images/logo-grey.svg" alt="" class="page-footer__logo-image" />
+                    </picture>
+                </a>
+            </div>
+            <div class="page-footer__bottom-row">
+                <div class="page-footer__bottom-decor-wrapper">
+    
+    
+                    <picture>
+                        <source srcset="/images/footer-decor-mobile.svg" media="(max-width: 640px)" />
+                        <img src="/images/footer-decor.svg" alt="" class="page-footer__bottom-decor-image" />
+                    </picture>
+                </div>
+                <div class="page-footer__copyright">
+                    ©2011 - 2023 ООО «ЭРЛАЙН»
+                </div>
+            </div>
+        </div>
+    </footer>    
+  </body>
+
+</html>

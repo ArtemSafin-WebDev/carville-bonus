@@ -579,13 +579,56 @@
   position: absolute;
   right: 1.6rem;
   top: 1.8rem;
-  z-index: 5;
+
   width: 2rem;
   height: 2rem;
   background-image: url("../images/question.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  display: block;
+  &:hover {
+    & .auth__form-questionmark-tooltip {
+      opacity: 1;
+      visibility: inherit;
+      transition: opacity 0.4s, visibility 0.4s;
+    }
+  }
+}
+
+.auth__form-questionmark-tooltip {
+  position: absolute;
+
+  bottom: 100%;
+  padding-bottom: 1rem;
+  width: max-content;
+  max-width: 25rem;
+  /* left: 50%;
+  transform: translateX(-50%); */
+
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  padding-right: 1rem;
+  bottom: auto;
+  z-index: 35;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  pointer-events: none;
+  display: block;
+}
+
+.auth__form-questionmark-tooltip-content {
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+  font-size: 1.4rem;
+  text-align: left;
+  line-height: 1.2;
+  display: block;
 }
 
 .auth__form-policy {
