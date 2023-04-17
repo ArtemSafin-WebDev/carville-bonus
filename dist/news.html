@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>
+        
+    </title>    <script type="module" crossorigin src="/assets/main.js"></script>
+    <link rel="stylesheet" href="/assets/main.css">
+  </head>
+
+  <body>
+    <header class="page-header">
+        <div class="page-header__content">
+            <a href="/" class="page-header__logo">
+                <img src="/images/logo.svg" alt="" class="page-header__logo-image">
+            </a>
+            <div class="page-header__menu">
+                <nav class="page-header__nav">
+                    <ul class="page-header__nav-list">
+                        <li class="page-header__nav-list-item">
+                            <a href="#" class="page-header__nav-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="page-header__nav-list-item">
+                            <a href="#" class="page-header__nav-link">
+                                Правила
+                            </a>
+                        </li>
+                        <li class="page-header__nav-list-item">
+                            <a href="#" class="page-header__nav-link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="page-header__nav-list-item">
+                            <a href="#" class="page-header__nav-link">
+                                Свидетельство
+                            </a>
+                        </li>
+    
+    
+    
+                    </ul>
+                </nav>
+                <div class="page-header__profile-btns">
+                    <a href="#" class="page-header__login-link">
+                        <span class="page-header__login-link-icon">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#profile"></use>
+                            </svg>
+                        </span>
+                        EMEX
+                    </a>
+                    <a href="#" class="page-header__logout-link">
+                        Выйти
+                    </a>
+                </div>
+            </div>
+            <button class="page-header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>    <main class="page-main">
+      <section class="news">
+          <div class="news__content">
+              <div class="news__left-col">
+                  <h1 class="news__heading">
+                      Новости
+                  </h1>
+                  <ul class="news__list">
+                      <li class="news__list-item">
+                          <div class="news__card">
+                              <div class="news__card-image-container">
+                                  <img src="/images/news/1.webp" alt="" class="news__card-image">
+                              </div>
+                              <div class="news__card-content">
+                                  <div class="news__card-date">
+                                      03 мая 2023
+                                  </div>
+                                  <h3 class="news__card-text">
+                                      «Свидетельство Субдилера» формируется отдельно по каждому бренду Luzar, Trialli,
+                                      Startvolt, Airline и CarvilleRacing.
+                                  </h3>
+                                  <div class="news__card-link">
+                                      Читать новость полностью
+                                      <svg width="14" height="14" aria-hidden="true">
+                                          <use xlink:href="#arrow-left"></use>
+                                      </svg>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="news__list-item">
+                          <div class="news__card">
+                              <div class="news__card-image-container">
+                                  <img src="/images/news/2.webp" alt="" class="news__card-image">
+                              </div>
+                              <div class="news__card-content">
+                                  <div class="news__card-date">
+                                      01 мая 2023
+                                  </div>
+                                  <h3 class="news__card-text">
+                                      Бонусные условия этого месяца:
+                                      - базовые баллы за любые закупки 0,5%
+                                      - увеличенные баллы при достижении 300.000р. 3%
+                                      - дополнительные баллы:
+                                      Водяные насосы Luzar 8%
+                                      Колодки Trialli 10%
+                                      Катушки Startvolt 10%
+                                  </h3>
+                                  <div class="news__card-link">
+                                      Читать новость полностью
+                                      <svg width="14" height="14" aria-hidden="true">
+                                          <use xlink:href="#arrow-left"></use>
+                                      </svg>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="news__list-item">
+                          <div class="news__card">
+                              <div class="news__card-image-container">
+                                  <img src="/images/news/3.webp" alt="" class="news__card-image">
+                              </div>
+                              <div class="news__card-content">
+                                  <div class="news__card-date">
+                                      01 мая 2023
+                                  </div>
+                                  <h3 class="news__card-text">
+                                      Старт программы лояльности «Карвиль-Бонус»
+                                  </h3>
+                                  <div class="news__card-link">
+                                      Читать новость полностью
+                                      <svg width="14" height="14" aria-hidden="true">
+                                          <use xlink:href="#arrow-left"></use>
+                                      </svg>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              <div class="news__right-col">
+                  <form action="/" method="POST" class="news__subscribe js-form">
+                      <img src="/images/news-illustration.webp" alt="" class="news__subscribe-image">
+                      <div class="news__subscribe-card">
+                          <h3 class="news__subscribe-card-title">
+                              Ваш Email
+                          </h3>
+                          <div class="news__subscribe-card-input-wrapper">
+                              <input type="email" name="email" class="news__subscribe-card-input" required=""
+                                  value="example@gmail.com">
+                          </div>
+                      </div>
+                      <button class="news__subscribe-submit" type="submit">
+                          <svg width="14" height="14" aria-hidden="true">
+                              <use xlink:href="#withdraw-checkmark"></use>
+                          </svg>
+                          Подписаться на новости
+                      </button>
+                  </form>
+              </div>
+          </div>
+      </section>    </main>
+    <footer class="page-footer ">
+        <div class="page-footer__content">
+            <div class="page-footer__top-row">
+                <ul class="page-footer__list">
+                    <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__link">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                            Пользовательское соглашение
+                        </a>
+                    </li>
+                    <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__link">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                    <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__link">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                            Техподдержка
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="page-footer__logo">
+    
+    
+                    <picture>
+                        <source srcset="/images/logo-grey-mobile.svg" media="(max-width: 640px)" />
+                        <img src="/images/logo-grey.svg" alt="" class="page-footer__logo-image" />
+                    </picture>
+                </a>
+            </div>
+            <div class="page-footer__bottom-row">
+                <div class="page-footer__bottom-decor-wrapper">
+    
+    
+                    <picture>
+                        <source srcset="/images/footer-decor-mobile.svg" media="(max-width: 640px)" />
+                        <img src="/images/footer-decor.svg" alt="" class="page-footer__bottom-decor-image" />
+                    </picture>
+                </div>
+                <div class="page-footer__copyright">
+                    ©2011 - 2023 ООО «ЭРЛАЙН»
+                </div>
+            </div>
+        </div>
+    </footer>    
+  </body>
+
+</html>

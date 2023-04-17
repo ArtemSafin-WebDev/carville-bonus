@@ -20,6 +20,8 @@ class Select {
     this.choices.forEach((choice) =>
       choice.addEventListener("change", this.handleSelection)
     );
+
+    this.handleSelection();
   }
 
   public open = () => {
@@ -48,6 +50,9 @@ class Select {
     let activeChoice = this.choices.find((choice) => choice.checked);
     if (!activeChoice) {
       activeChoice = this.choices[0];
+      this.element.classList.remove("choice-selected");
+    } else {
+      this.element.classList.add("choice-selected");
     }
 
     if (!activeChoice.value.trim()) {

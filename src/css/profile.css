@@ -286,6 +286,40 @@
 .profile__form-select {
   position: relative;
   border-bottom: 1px solid #b2b4b3;
+  position: relative;
+}
+
+.profile__form-select-placeholder {
+  position: absolute;
+  left: 1.6rem;
+  top: 1.6rem;
+  letter-spacing: 0.05rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  transition: transform 0.2s;
+  transform-origin: left center;
+  pointer-events: none;
+  color: var(--primary-color);
+}
+
+.choice-selected .profile__form-select-placeholder {
+  transform: scale(0.8) translateY(-3rem);
+}
+
+.profile__form-select:has(.profile__form-select-placeholder) {
+  & .profile__form-select-btn {
+    color: var(--text-color);
+  }
+}
+
+.profile__form-select:has(.profile__form-select-placeholder):not(
+    .choice-selected
+  ) {
+  & .profile__form-select-btn-text {
+    opacity: 0;
+  }
 }
 
 .profile__form-select-btn {
@@ -319,6 +353,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  transition: opacity 0.2s;
 }
 
 .profile__form-select-dropdown {
@@ -635,7 +670,7 @@
   pointer-events: none;
   right: 0;
   top: 0;
-  width: 35.7rem;
+  width: 42rem;
   height: auto;
   right: -17rem;
   top: -10rem;
@@ -650,7 +685,7 @@
 .profile__bonuses-card {
   background: linear-gradient(
     71.02deg,
-    #ff6e00 0%,
+    rgba(255, 110, 0, 1) 0%,
     rgba(255, 110, 0, 0.5) 100%
   );
   backdrop-filter: blur(12px);
@@ -694,6 +729,11 @@
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 3.2rem;
+
+  @media (--mobile) {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
 }
 
 .profile__bonuses-card-amount {
@@ -701,6 +741,11 @@
   font-weight: 700;
   font-size: 5.7rem;
   line-height: 6.4rem;
+
+  @media (--mobile) {
+    font-size: 4.5rem;
+    line-height: 1.2;
+  }
 }
 
 .profile__bonuses-remark {
@@ -803,5 +848,127 @@
 
   @media (--mobile) {
     flex-grow: 1;
+  }
+}
+
+.profile__certificates {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 23rem;
+
+  @media (--mobile) {
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+  }
+}
+
+.profile__certificates-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-bottom: 3.2rem;
+
+  @media (--mobile) {
+    display: none;
+  }
+}
+
+.profile__certificates-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 2rem;
+  & p {
+    margin-bottom: 1.6rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.profile__certificates-form {
+  margin-bottom: 1.6rem;
+}
+
+.profile__certificates-remark {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+  color: #b2b4b3;
+  margin-bottom: 3.2rem;
+}
+
+.profile__certificates-results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.profile__certificates-results-card {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.profile__certificates-results-card-image-container {
+  flex-shrink: 0;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile__certificates-results-card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile__certificates-results-card-content {
+  width: 20%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.profile__certificates-results-card-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.015rem;
+}
+
+.profile__certificates-results-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.01rem;
+  color: var(--primary-color);
+
+  &:link,
+  &:visited {
+    color: var(--primary-color);
+  }
+
+  & svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: currentColor;
+    flex-shrink: 0;
   }
 }
