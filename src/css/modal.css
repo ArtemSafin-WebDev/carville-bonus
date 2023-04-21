@@ -1,0 +1,157 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overscroll-behavior-y: contain;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0s linear 0.4s;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  padding: var(--content-padding, 0);
+  &.active {
+    opacity: 1;
+    visibility: inherit;
+    transition: opacity 0.4s, visibility 0.4s;
+  }
+}
+
+.modal__inner {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2.4rem;
+  color: #000000;
+  position: relative;
+  max-width: 41rem;
+  width: 100%;
+  padding: 3.2rem;
+  padding-top: 2.4rem;
+
+  @media (--mobile) {
+    padding: 2rem;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  right: 3.2rem;
+  top: 2.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+
+  @media (--mobile) {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  & svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: #000000;
+  }
+}
+
+.modal__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.modal__bonuses {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.4rem;
+  gap: 2.4rem;
+}
+
+.modal__bonuses-amount {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.modal__bonuses-amount-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.01rem;
+}
+
+.modal__bonuses-amount-total {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #ff7308;
+}
+
+.modal__bonuses-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  @media (--mobile) {
+    gap: 1.6rem;
+  }
+}
+
+.modal__bonuses-btn {
+  display: block;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  padding: 2.4rem 5rem;
+  background: radial-gradient(50% 386.77% at 50% 50%, #fab461 0%, #f76b1c 100%);
+  border-radius: 2.4rem;
+  color: white;
+  &:link,
+  &:visited {
+    color: white;
+  }
+
+  @media (--mobile) {
+    font-size: 2rem;
+    line-height: 1.3;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+}
+
+.modal__bonuses-cancel-btn {
+  display: block;
+  text-align: center;
+  padding: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  border: 1px solid #ff6e00;
+  border-radius: 2.4rem;
+  color: var(--primary-color);
+  &:link,
+  &:visited {
+    color: var(--primary-color);
+  }
+
+  @media (--mobile) {
+    font-size: 2rem;
+    line-height: 1.3;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+}

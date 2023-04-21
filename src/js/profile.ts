@@ -8,6 +8,7 @@ export default function profile() {
 
   elements.forEach((element) => {
     const form = element.querySelector<HTMLFormElement>("form")!;
+    if (!form) return;
     const addAddress =
       element.querySelector<HTMLButtonElement>(".js-add-address");
     let validator = new Validator(form);

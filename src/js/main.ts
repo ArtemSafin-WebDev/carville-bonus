@@ -6,6 +6,7 @@ import forms from "./forms";
 import selects from "./selects";
 import multistepForm from "./multistepForm";
 import profile from "./profile";
+import modals from "./modals";
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Hello world");
@@ -15,4 +16,5 @@ document.addEventListener("DOMContentLoaded", () => {
   selects();
   multistepForm();
   profile();
+  modals();
 });
