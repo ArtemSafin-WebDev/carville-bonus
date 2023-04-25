@@ -2299,6 +2299,12 @@
   }
 }
 
+.js-accordion.active .profile__statistics-results-mobile-card-btn-icon {
+  & svg {
+    transform: scale(1.5) rotate(180deg);
+  }
+}
+
 .profile__statistics-results-mobile-card-btn-content {
   width: 30%;
   flex-grow: 1;
