@@ -30,48 +30,51 @@
                         </p>
                     </div>
                     <form action="/" method="GET" class="profile__certificates-form">
-                        <div class="profile__form-select js-select">
-                            <button class="profile__form-select-btn" type="button">
-                                <span class="profile__form-select-btn-text">
+                        <div class="select js-select">
+                            <button class="select__btn" type="button">
+                                <span class="select__btn-text">
 
                                 </span>
                                 <svg width="14" height="14" aria-hidden="true">
                                     <use xlink:href="#arrow-down"></use>
                                 </svg>
-                                <span class="profile__form-select-placeholder">
+                                <span class="select__placeholder">
                                     Адрес
                                 </span>
                             </button>
-                            <div class="profile__form-select-dropdown">
-                                <div class="profile__form-select-dropdown-inner">
-                                    <ul class="profile__form-select-list">
-                                        <li class="profile__form-select-list-item">
-                                            <label class="profile__form-select-choice">
-                                                <input type="radio" name="distributor"
-                                                    class="profile__form-select-choice-input" value="all">
-                                                <span class="profile__form-select-choice-text">
-                                                    Все адреса
+                            <div class="select__dropdown">
+                                <div class="select__dropdown-inner">
+                                    <ul class="select__list">
+
+                                        <li class="select__list-item">
+                                            <label class="select__choice">
+                                                <input type="radio" name="address" class="select__choice-input"
+                                                    value="Все" checked="">
+                                                <span class="select__choice-mark">
+                                                    <svg width="14" height="14" aria-hidden="true">
+                                                        <use xlink:href="#checkmark"></use>
+                                                    </svg>
                                                 </span>
-                                            </label>
-                                        </li>
-                                        <li class="profile__form-select-list-item">
-                                            <label class="profile__form-select-choice">
-                                                <input type="radio" name="distributor"
-                                                    class="profile__form-select-choice-input" value="1">
-                                                <span class="profile__form-select-choice-text">
+                                                <span class="select__choice-text">
                                                     Адрес 1
                                                 </span>
                                             </label>
                                         </li>
-                                        <li class="profile__form-select-list-item">
-                                            <label class="profile__form-select-choice">
-                                                <input type="radio" name="distributor"
-                                                    class="profile__form-select-choice-input" value="2">
-                                                <span class="profile__form-select-choice-text">
+                                        <li class="select__list-item">
+                                            <label class="select__choice">
+                                                <input type="radio" name="address" class="select__choice-input"
+                                                    value="Адрес 2">
+                                                <span class="select__choice-mark">
+                                                    <svg width="14" height="14" aria-hidden="true">
+                                                        <use xlink:href="#checkmark"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="select__choice-text">
                                                     Адрес 2
                                                 </span>
                                             </label>
                                         </li>
+
                                     </ul>
                                 </div>
                             </div>

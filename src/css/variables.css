@@ -9,3 +9,15 @@
     --content-padding: 1rem;
   }
 }
+
+.air-datepicker {
+  --adp-color-current-date: #ff6e00;
+  --adp-cell-background-color-selected: #ff6e00;
+  --adp-day-name-color-hover: #ff6e00;
+  --adp-accent-color: #ff6e00;
+  --adp-background-color-selected-other-month-focused: #ff6e00;
+  --adp-cell-background-color-selected-hover: #ff6e00;
+  --adp-border-color: rgba(255, 107, 0, 0.5);
+  --adp-cell-background-color-in-range: rgba(255, 110, 0, 0.1);
+  --adp-cell-background-color-in-range-hover: rgba(255, 110, 0, 0.2);
+}

@@ -48,23 +48,24 @@ class Select {
   private handleSelection = () => {
     if (!this.choices.length) return;
     let activeChoice = this.choices.find((choice) => choice.checked);
-    if (!activeChoice) {
-      activeChoice = this.choices[0];
+
+    if (activeChoice) {
+      if (activeChoice.value.trim()) {
+        this.element.classList.add("choice-selected");
+        const textElement =
+          activeChoice.parentElement?.querySelector("span:last-of-type");
+
+        if (textElement && this.btnTextElement) {
+          this.btnTextElement.textContent = textElement.textContent;
+        }
+      } else {
+        this.element.classList.remove("choice-selected");
+      }
+    } else {
       this.element.classList.remove("choice-selected");
-    } else {
-      this.element.classList.add("choice-selected");
-    }
-
-    if (!activeChoice.value.trim()) {
-      this.element.classList.add("placeholder-shown");
-    } else {
-      this.element.classList.remove("placeholder-shown");
-    }
-
-    const textElement = activeChoice.nextElementSibling;
-
-    if (textElement && this.btnTextElement) {
-      this.btnTextElement.textContent = textElement.textContent;
+      if (this.btnTextElement) {
+        this.btnTextElement.textContent = "";
+      }
     }
 
     this.close();

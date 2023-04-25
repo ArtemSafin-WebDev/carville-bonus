@@ -33,3 +33,285 @@
         </div>
     </div>
 </div>
+<div class="modal js-modal" id="filter-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-close-modal" type="button">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#modal-cross"></use>
+            </svg>
+        </button>
+        <h3 class="modal__heading">
+            Фильтр
+        </h3>
+        <form action="/" method="GET" class="modal__form">
+            <div class="modal__form-fields">
+                <div class="modal__form-field">
+                    <div class="select js-select">
+                        <button class="select__btn" type="button">
+                            <span class="select__btn-text">
+
+                            </span>
+
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#arrow-down"></use>
+                            </svg>
+
+
+                            <span class="select__placeholder">
+                                Наименование
+                            </span>
+                        </button>
+                        <div class="select__dropdown">
+                            <div class="select__dropdown-inner">
+                                <ul class="select__list">
+
+                                    <li class="select__list-item select__list-item--placeholder">
+                                        <label class="select__choice">
+                                            <input type="radio" name="naming" class="select__choice-input" value="">
+                                            <span class="select__choice-mark">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="select__choice-text">
+                                                Не выбрано
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="select__list-item">
+                                        <label class="select__choice">
+                                            <input type="radio" name="naming" class="select__choice-input"
+                                                value="Насос водяной">
+                                            <span class="select__choice-mark">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="select__choice-text">
+                                                Насос водяной
+                                            </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__form-field">
+                    <div class="select js-select">
+                        <button class="select__btn" type="button">
+                            <span class="select__btn-text">
+
+                            </span>
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#arrow-down"></use>
+                            </svg>
+                            <span class="select__placeholder">
+                                Бренд
+                            </span>
+                        </button>
+                        <div class="select__dropdown">
+                            <div class="select__dropdown-inner">
+                                <ul class="select__list">
+
+                                    <li class="select__list-item select__list-item--placeholder">
+                                        <label class="select__choice">
+                                            <input type="radio" name="brand" class="select__choice-input" value="">
+                                            <span class="select__choice-mark">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="select__choice-text">
+                                                Не выбрано
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="select__list-item">
+                                        <label class="select__choice">
+                                            <input type="radio" name="brand" class="select__choice-input"
+                                                value="Carville">
+                                            <span class="select__choice-mark">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="select__choice-text">
+                                                Carville
+                                            </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__form-field">
+                    <div class="select js-select">
+                        <button class="select__btn" type="button">
+                            <span class="select__btn-text">
+
+                            </span>
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#arrow-down"></use>
+                            </svg>
+                            <span class="select__placeholder">
+                                Артикул
+                            </span>
+                        </button>
+                        <div class="select__dropdown">
+                            <div class="select__dropdown-inner">
+                                <ul class="select__list">
+
+                                    <li class="select__list-item select__list-item--placeholder">
+                                        <label class="select__choice">
+                                            <input type="radio" name="articul" class="select__choice-input" value="">
+                                            <span class="select__choice-mark">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="select__choice-text">
+                                                Не выбрано
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="select__list-item">
+                                        <label class="select__choice">
+                                            <input type="radio" name="articul" class="select__choice-input"
+                                                value="LPW 0108">
+                                            <span class="select__choice-mark">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="select__choice-text">
+                                                LPW 0108
+                                            </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__form-field">
+                    <div class="select js-select">
+                        <button class="select__btn" type="button">
+                            <span class="select__btn-text">
+
+                            </span>
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#arrow-down"></use>
+                            </svg>
+                            <span class="select__placeholder">
+                                Статистика за
+                            </span>
+                        </button>
+                        <div class="select__dropdown">
+                            <div class="select__dropdown-inner">
+                                <ul class="select__list">
+
+                                    <li class="select__list-item select__list-item--placeholder">
+                                        <label class="select__choice">
+                                            <input type="radio" name="period" class="select__choice-input" value="">
+                                            <span class="select__choice-mark">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="select__choice-text">
+                                                Не выбрано
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="select__list-item">
+                                        <label class="select__choice">
+                                            <input type="radio" name="period" class="select__choice-input" value="Год">
+                                            <span class="select__choice-mark">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="select__choice-text">
+                                                Год
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="select__list-item">
+                                        <label class="select__choice">
+                                            <input type="radio" name="period" class="select__choice-input"
+                                                value="Месяц">
+                                            <span class="select__choice-mark">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="select__choice-text">
+                                                Месяц
+                                            </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__form-field">
+                    <div class="select js-select">
+                        <button class="select__btn" type="button">
+                            <span class="select__btn-text">
+
+                            </span>
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#arrow-down"></use>
+                            </svg>
+                            <span class="select__placeholder">
+                                Дистрибьютор
+                            </span>
+                        </button>
+                        <div class="select__dropdown">
+                            <div class="select__dropdown-inner">
+                                <ul class="select__list">
+
+                                    <li class="select__list-item">
+                                        <label class="select__choice">
+                                            <input type="radio" name="distributor" class="select__choice-input"
+                                                value="Все" checked="">
+                                            <span class="select__choice-mark">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="select__choice-text">
+                                                Все
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="select__list-item">
+                                        <label class="select__choice">
+                                            <input type="radio" name="distributor" class="select__choice-input"
+                                                value="Дистрибьютор 1">
+                                            <span class="select__choice-mark">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="select__choice-text">
+                                                Дистрибьютор 1
+                                            </span>
+                                        </label>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal__form-submit" type="submit">
+                Сохранить
+            </button>
+        </form>
+    </div>
+</div>

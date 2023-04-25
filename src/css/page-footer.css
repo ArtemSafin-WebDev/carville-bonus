@@ -6,6 +6,12 @@
   grid-gap: var(--content-padding, 0);
 }
 
+.page-footer--with-bump {
+  @media (--mobile) {
+    padding-bottom: 14rem;
+  }
+}
+
 .page-footer--only-desktop {
   @media (--mobile) {
     display: none;

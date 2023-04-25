@@ -48,16 +48,16 @@
   width: 2.4rem;
   height: 2.4rem;
 
-  @media (--mobile) {
-    top: 2rem;
-    right: 2rem;
-  }
-
   & svg {
     display: block;
     width: 100%;
     height: 100%;
     fill: #000000;
+  }
+
+  @media (--mobile) {
+    top: 2rem;
+    right: 2rem;
   }
 }
 
@@ -146,6 +146,43 @@
   &:link,
   &:visited {
     color: var(--primary-color);
+  }
+
+  @media (--mobile) {
+    font-size: 2rem;
+    line-height: 1.3;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+}
+
+.modal__form {
+  margin-top: 1rem;
+}
+
+.modal__form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.modal__form-submit {
+  display: block;
+  text-align: center;
+  padding: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  background: radial-gradient(50% 386.77% at 50% 50%, #fab461 0%, #f76b1c 100%);
+  border-radius: 2.4rem;
+  color: white;
+  width: 100%;
+  text-align: center;
+  &:link,
+  &:visited {
+    color: white;
   }
 
   @media (--mobile) {

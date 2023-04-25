@@ -78,3 +78,7 @@ textarea {
   background-color: var(--primary-color);
   -webkit-text-fill-color: white;
 }
+
+.air-datepicker--pointer {
+  display: none;
+}

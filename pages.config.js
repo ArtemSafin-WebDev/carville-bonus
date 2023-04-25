@@ -5,6 +5,8 @@ import rules from "./pages-data/rules";
 import news from "./pages-data/news";
 import certificates from "./pages-data/certificates";
 import stats from "./pages-data/stats";
+import statistics from "./pages-data/statistics";
+import profile from "./pages-data/profile";
 
 const pagesConfig = {
   ...home,
@@ -14,6 +16,8 @@ const pagesConfig = {
   ...news,
   ...certificates,
   ...stats,
+  ...statistics,
+  ...profile,
 };
 
 export default pagesConfig;

@@ -17,6 +17,13 @@ document.addEventListener("click", (event: MouseEvent) => {
   if (target.matches(".js-close-modal") || target.closest(".js-close-modal")) {
     event.preventDefault();
     closeAllModals();
+    return;
+  }
+
+  if (target.matches(".js-modal")) {
+    event.preventDefault();
+    closeAllModals();
+    return;
   }
 });
 
