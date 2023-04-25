@@ -718,7 +718,7 @@
   flex-direction: column;
   gap: 1.6rem;
   position: relative;
-
+  z-index: 40;
   &::after {
     content: "";
     width: 10rem;
