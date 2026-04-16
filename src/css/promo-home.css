@@ -38,15 +38,26 @@
 }
 
 .promo-home__banner-wrapper {
-  overflow: hidden;
-  border-radius: 2.4rem;
-  background: #cfcfcf;
+  position: relative;
+}
+
+.promo-home__banner-decor {
+  position: absolute;
+  aspect-ratio: 1442 / 842;
+  max-width: none;
+  right: -13%;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+  width: 95.68%;
 }
 
 .promo-home__banner {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 2.4rem;
 }
 
 .promo-home__banner-picture {
@@ -397,14 +408,15 @@ body.promo-home-page {
     line-height: 1.1;
   }
 
-  .promo-home__banner-wrapper {
-    border-radius: 1.6rem;
-  }
-
   .promo-home__banner {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 1.6rem;
+  }
+
+  .promo-home__banner-decor {
+    display: none;
   }
 
   .promo-home__banner-picture {
