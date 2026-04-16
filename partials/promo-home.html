@@ -1,4 +1,8 @@
 <section class="promo-home">
+    <div class="promo-home__decor" aria-hidden="true">
+        <img src="/images/promo-home/header-decor-left.png" alt="" class="promo-home__decor-left">
+        <img src="/images/promo-home/header-decor-right.png" alt="" class="promo-home__decor-right">
+    </div>
     <div class="promo-home__inner">
         <div class="promo-home__hero">
             <h1 class="promo-home__title">
@@ -6,8 +10,11 @@
                 Belgee X70 и других ценных призов
             </h1>
             <div class="promo-home__banner-wrapper">
-                <img src="/images/promo-home/banner.webp" alt="Акция TRIALLI: купи колодки и выиграй авто"
-                    class="promo-home__banner">
+                <picture class="promo-home__banner-picture">
+                    <source srcset="/images/promo-home/banner-mobile.webp" media="(max-width: 640px)">
+                    <img src="/images/promo-home/banner.webp" alt="Акция TRIALLI: купи колодки и выиграй авто"
+                        class="promo-home__banner">
+                </picture>
             </div>
         </div>
 
@@ -20,28 +27,12 @@
             <section class="promo-home__terms" id="promo-terms">
                 <h2 class="promo-home__section-title">Условия акции</h2>
                 <div class="promo-home__terms-layout">
-                    <div class="promo-home__terms-main">
-                        <ul class="promo-home__bullet-list">
-                            <li class="promo-home__bullet-list-item">
-                                Каждому участнику акции начисляются специальные баллы за покупку тормозных колодок
-                                TRIALLI в период с 1.01.2026 г. по 30.06.2026 г. в размере 1% с суммы закупки.
-                            </li>
-                            <li class="promo-home__bullet-list-item">
-                                За каждые 500 начисленных баллов участник акции получает 1 лотерейный билет.
-                                1 лотерейный билет <strong>= 50 000 руб.</strong> Лотерейные билеты с уникальными
-                                номерами автоматически генерируются в Личном кабинете.
-                            </li>
-                        </ul>
-
-                        <a href="/login.html" class="promo-home__cta">
-                            Перейти в личный кабинет
-                        </a>
-
-                        <p class="promo-home__prize">
-                            Главный приз — обновлённый автомобиль Belgee X70, а также смартфоны, подарочные
-                            сертификаты, наборы инструментов, фирменная одежда и сувениры.
-                        </p>
-                    </div>
+                    <ul class="promo-home__bullet-list promo-home__bullet-list--primary">
+                        <li class="promo-home__bullet-list-item">
+                            Каждому участнику акции начисляются специальные баллы за покупку тормозных колодок
+                            TRIALLI в период с 1.01.2026 г. по 30.06.2026 г. в размере 1% с суммы закупки.
+                        </li>
+                    </ul>
 
                     <div class="promo-home__dropdowns">
                         <div class="promo-home__dropdown js-promo-dropdown">
@@ -113,30 +104,47 @@
                             </div>
                         </div>
                     </div>
+
+                    <ul class="promo-home__bullet-list promo-home__bullet-list--secondary">
+                        <li class="promo-home__bullet-list-item">
+                            За каждые 500 начисленных баллов участник акции получает 1 лотерейный билет.
+                            1 лотерейный билет <strong>= 50 000 руб.</strong> Лотерейные билеты с уникальными
+                            номерами автоматически генерируются в Личном кабинете.
+                        </li>
+                    </ul>
+
+                    <a href="/login.html" class="promo-home__cta">
+                        Перейти в личный кабинет
+                    </a>
+
+                    <p class="promo-home__prize">
+                        Главный приз — обновлённый автомобиль Belgee X70, а также смартфоны, подарочные
+                        сертификаты, наборы инструментов, фирменная одежда и сувениры.
+                    </p>
                 </div>
             </section>
 
             <section class="promo-home__stages">
                 <h2 class="promo-home__section-title">Порядок и этапы розыгрыша</h2>
-                <div class="promo-home__stages-list">
-                    <article class="promo-home__stage">
+                <ul class="promo-home__stages-list">
+                    <li class="promo-home__stage">
                         <h3 class="promo-home__stage-title">Отборочный этап. Проходит онлайн</h3>
                         <p class="promo-home__stage-text">
                             После завершения акции среди всех лотерейных билетов мы случайным образом отберём 100
                             кандидатов на главный приз. 1 место — 1 шанс на удачу: если участника уже выбрали
                             кандидатом на главный приз, остальные его лотерейные билеты аннулируются.
                         </p>
-                    </article>
+                    </li>
 
-                    <article class="promo-home__stage">
+                    <li class="promo-home__stage">
                         <h3 class="promo-home__stage-title">Финальный этап. Проходит оффлайн</h3>
                         <p class="promo-home__stage-text">
                             Финальный розыгрыш мы проведём на гала-ужине в Санкт-Петербурге среди тех, кто будет
                             присутствовать на встрече лично или через представителя. Оплата проживания в отеле за наш
                             счёт, дорога до места проведения — за счёт участников розыгрыша.
                         </p>
-                    </article>
-                </div>
+                    </li>
+                </ul>
             </section>
 
             <div class="promo-home__note">
