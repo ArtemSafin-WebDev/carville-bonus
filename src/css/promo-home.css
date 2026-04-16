@@ -1,0 +1,359 @@
+.promo-home {
+  position: relative;
+  display: grid;
+  grid-template-columns:
+    [main-start] 1fr [content-start] minmax(0, var(--container-width, 0))
+    [content-end] 1fr [main-end];
+  grid-gap: var(--content-padding, 0);
+  padding: 23.7rem 0 11rem;
+  overflow: clip;
+  background-color: white;
+}
+
+.promo-home__inner {
+  grid-column-start: content-start;
+  grid-column-end: content-end;
+  position: relative;
+  z-index: 1;
+}
+
+.promo-home__hero {
+  display: block;
+}
+
+.promo-home__title {
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1.18;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.promo-home__title {
+  max-width: 150rem;
+}
+
+.promo-home__title b {
+  color: var(--primary-color);
+}
+
+.promo-home__banner-wrapper {
+  overflow: hidden;
+  border-radius: 2.4rem;
+  box-shadow: 0 3rem 6rem rgba(36, 54, 6, 0.18);
+  background: linear-gradient(135deg, #102126 0%, #161d18 42%, #202b08 100%);
+}
+
+.promo-home__banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.promo-home__content {
+  margin-top: 7.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+}
+
+.promo-home__lead {
+  max-width: 151rem;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.15;
+
+  & span {
+    color: var(--primary-color);
+  }
+}
+
+.promo-home__section-title {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.35;
+  margin-bottom: 1.6rem;
+}
+
+.promo-home__terms-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 44.8rem;
+  gap: 8rem;
+  align-items: start;
+}
+
+.promo-home__terms-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.promo-home__bullet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.promo-home__bullet-list-item,
+.promo-home__prize {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.promo-home__bullet-list-item {
+  position: relative;
+  padding-left: 3.8rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
+
+  & strong {
+    color: #000;
+    font-weight: 700;
+  }
+}
+
+.promo-home__cta {
+  align-self: flex-start;
+  margin-left: 3.2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.78;
+  color: white;
+  background: radial-gradient(
+    50% 386.77% at 50% 50%,
+    #fab461 0%,
+    #f98f3e 50%,
+    #f76b1c 100%
+  );
+  box-shadow: 0 1.4rem 2.8rem rgba(247, 107, 28, 0.22);
+
+  &:link,
+  &:visited {
+    color: white;
+  }
+}
+
+.promo-home__dropdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: relative;
+}
+
+.promo-home__dropdown {
+  position: relative;
+  z-index: 1;
+}
+
+.promo-home__dropdown.active {
+  z-index: 5;
+}
+
+.promo-home__dropdown.closing {
+  z-index: 5;
+}
+
+.promo-home__dropdown-button {
+  width: 100%;
+  min-height: 11.8rem;
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr) 2.4rem;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 1.4rem 1.6rem 1.4rem 1.6rem;
+  border-radius: 1.6rem;
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.promo-home__dropdown-media {
+  width: 9rem;
+  height: 9rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-home__dropdown-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.promo-home__dropdown-label {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.promo-home__dropdown-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #13293e;
+  transition: transform 0.3s ease;
+
+  & svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: currentColor;
+  }
+}
+
+.promo-home__dropdown.active .promo-home__dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.promo-home__dropdown-panel {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.8rem);
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-0.8rem);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0s linear 0.25s;
+}
+
+.promo-home__dropdown.active .promo-home__dropdown-panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.promo-home__dropdown-panel-inner {
+  padding: 2.4rem;
+  border-radius: 1.6rem;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.promo-home__dropdown-lead {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.promo-home__dropdown-text,
+.promo-home__dropdown-list {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.promo-home__dropdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.promo-home__dropdown-list li {
+  position: relative;
+  padding-left: 1.8rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.promo-home__stages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  max-width: 98rem;
+}
+
+.promo-home__stage-title {
+  position: relative;
+  padding-left: 3.8rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
+}
+
+.promo-home__stage-text,
+.promo-home__note {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.promo-home__note {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  max-width: 98rem;
+  margin-top: 0.2rem;
+}
+
+body.promo-home-page {
+  background-color: white;
+}
+
+.promo-home-page__header-decor {
+  pointer-events: none;
+  position: absolute;
+  inset: -4.9rem 0 auto 0;
+  z-index: 0;
+}
+
+.promo-home-page__header-decor-left,
+.promo-home-page__header-decor-right {
+  position: absolute;
+}
+
+.promo-home-page__header-decor-left {
+  left: 1rem;
+  top: 1rem;
+  width: 10.5rem;
+  height: 15.7rem;
+}
+
+.promo-home-page__header-decor-right {
+  right: 0;
+  top: 0;
+  width: 13.6rem;
+  height: 18.4rem;
+}

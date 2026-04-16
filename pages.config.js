@@ -7,6 +7,7 @@ import certificates from "./pages-data/certificates";
 import stats from "./pages-data/stats";
 import statistics from "./pages-data/statistics";
 import profile from "./pages-data/profile";
+import trialliPromo from "./pages-data/trialliPromo";
 
 const pagesConfig = {
   ...home,
@@ -18,6 +19,7 @@ const pagesConfig = {
   ...stats,
   ...statistics,
   ...profile,
+  ...trialliPromo,
 };
 
 export default pagesConfig;

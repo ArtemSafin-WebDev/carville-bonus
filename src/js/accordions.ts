@@ -5,6 +5,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function accordions() {
   const SPEED = 0.3;
+  const accordions = Array.from(
+    document.querySelectorAll<HTMLElement>(".js-accordion")
+  );
+
+  const syncA11yState = (element: HTMLElement, isActive: boolean) => {
+    const content = element.querySelector<HTMLElement>(".js-accordion-content");
+    const btn = element.querySelector<HTMLElement>(".js-accordion-btn");
+
+    if (!content || !btn) return;
+
+    btn.setAttribute("aria-expanded", String(isActive));
+    content.setAttribute("aria-hidden", String(!isActive));
+  };
 
   const openAccordion = (element: HTMLElement) => {
     gsap.to(element, {
@@ -20,6 +33,17 @@ export default function accordions() {
       onComplete: () => ScrollTrigger.refresh(),
     });
   };
+
+  accordions.forEach((element) => {
+    const content = element.querySelector<HTMLElement>(".js-accordion-content");
+    const isActive = element.classList.contains("active");
+
+    if (content) {
+      content.style.height = isActive ? "auto" : "0px";
+    }
+
+    syncA11yState(element, isActive);
+  });
 
   document.addEventListener("click", (event: MouseEvent) => {
     const target = event.target as HTMLElement;
@@ -50,6 +74,7 @@ export default function accordions() {
               )!;
               closeAccordion(content);
               otherElement.classList.remove("active");
+              syncA11yState(otherElement, false);
             }
           }
         });
@@ -57,8 +82,10 @@ export default function accordions() {
 
       if (element.classList.contains("active")) {
         closeAccordion(content);
+        syncA11yState(element, false);
       } else {
         openAccordion(content);
+        syncA11yState(element, true);
       }
       element.classList.toggle("active");
     }

@@ -10,6 +10,7 @@ import modals from "./modals";
 import tableSlider from "./tableSlider";
 import accordions from "./accordions";
 import buyPicker from "./buyPicker";
+import promoDropdowns from "./promoDropdowns";
 
 import "../css/style.css";
 import statisticsPicker from "./statisticsPicker";
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   modals();
   tableSlider();
   accordions();
+  promoDropdowns();
   buyPicker();
   statisticsPicker();
 });
